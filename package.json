@@ -14,7 +14,9 @@
   "author": "",
   "license": "ISC",
   "description": "",
-  "dependencies": {},
+  "dependencies": {
+    "shelljs": "^0.8.3"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/voydevich/builder.git"
