@@ -4,22 +4,17 @@
   "main": "index.js",
   "scripts": {
     "build": "echo 'build'",
-    "patch-release": "npm version patch && npm publish && git push --follow-tags",
     "git-commit": "git add -A . && git commit -a -m 'gh-pages update'",
     "git-push": "git push origin gh-pages --force && git checkout master",
     "deploy": "npm run build && npm run git-commit && npm run git-push"
   },
   "bin": {
-    "github-pages-commit": "bin/commit.js",
-    "github-pages-push": "bin/push.js",
-    "github-pages-deploy": "bin/deploy.js"
+    "website": "bin/website.js"
   },
   "author": "",
   "license": "ISC",
   "description": "",
-  "dependencies": {
-    "shelljs": "^0.8.3"
-  },
+  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/voydevich/builder.git"
