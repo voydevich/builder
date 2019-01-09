@@ -3,11 +3,11 @@
   "version": "1.0.5",
   "main": "index.js",
   "scripts": {
-    "build": "echo 'build'",
+    "website": "node website/website.js",
     "patch-release": "npm version patch && npm publish",
     "git-commit": "git add -A . && git commit -a -m 'gh-pages update'",
     "git-push": "git push origin master --force && git checkout master",
-    "deploy": "npm run build && npm run git-commit && npm run git-push && npm run patch-release"
+    "deploy": "npm run git-commit && npm run git-push && npm run patch-release"
   },
   "bin": {
     "website": "website/website.js"
