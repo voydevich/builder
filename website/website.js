@@ -3,7 +3,6 @@
 const program = require('commander');
 const path = require('path');
 
-
 program
     .usage('[command] [options] \n         Command without flags will be started in interactive mode.');
 
@@ -15,3 +14,6 @@ program
     .option('--silent', 'TARS will not ask any question about configuration')
     .option('-s, --source <source>', 'Change source of TARS')
     .action(options => require('../lib/command-actions/init')(options));
+
+program.parse(process.argv);
+
