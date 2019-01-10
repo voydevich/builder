@@ -3,14 +3,14 @@
   "version": "1.0.11",
   "main": "index.js",
   "scripts": {
-    "tbt": "node tbt/tbt.js",
+    "tbt": "node tbt-cli/tbt-cli.js",
     "patch-release": "npm version patch && npm publish",
     "git-commit": "git add -A . && git commit -a -m 'gh-pages update'",
     "git-push": "git push origin master --force && git checkout master",
     "deploy": "npm run git-commit && npm run git-push && npm run patch-release"
   },
   "bin": {
-    "tbt": "tbt/tbt.js"
+    "tbt": "tbt-cli/tbt-cli.js"
   },
   "author": "",
   "license": "ISC",
